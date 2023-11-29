@@ -1,7 +1,7 @@
 # notes
-* `other` user/group has value 0 (all users are implicitly included in this group)
+* admin user has value 0
+* `other` user/group has value 1 (all users are implicitly included in this group)
 * `other` can be used for anonymous users (not logged-in)
-* admin user has value 1
 * upg = user private group
 
 # prerequisite
@@ -22,7 +22,7 @@ these return data along with true/false on success/failure
 * addUser: user is assigned a user private group
 * addGroup: returns new gid
 
-these 2 functions take an id. assert id != 0 for these functions
+these 2 functions take an id. assert id != 1 for these functions
 1. addToGroup: add to `groups` table
 2. removeFromGroup: assert not upg, remove from `groups` table
 
