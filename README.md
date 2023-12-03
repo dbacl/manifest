@@ -33,11 +33,12 @@ assert id != 0 or 1 for these
 # pros
 * stict read/write checking, even for self-owned data, if no write access anywhere, it is guaranteed to be immutable.
 * shared ownership
-* can detect information leakage through set intersection
+* can detect information leakage through set intersection (let's say there is a table of users, user's address, and stores. You only have access to see stores and users. If there was a query that showed which users can visit which stores, this would implicitly leak their general location.)
 * robustly delete all owned and partially owned data
 * easy to understand
 * simple well-defined primitives allow for more complex hierarchies
 * implements gdpr's right to be forgotten, right to be informed
+* due to permissions per row nature, information will be seperated into different tables based on sensitivity of data.
 
 # cons
 * space/time overhead
