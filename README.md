@@ -9,7 +9,7 @@
 
 # table modifications
 * add a `groups` table: id x gid x private (uid can show up in multiple rows, private is a boolean flagging if the group is a upg)
-* add columns to all tables with non-internal data: `owner`, `userR`, `userW`, `group`, `groupR`, `groupW`, `otherR`, `otherW` (RW are booleans, others are ints)
+* add columns to all tables with non-internal data: `user`, `userR`, `userW`, `group`, `groupR`, `groupW`, `otherR`, `otherW` (RW are booleans, others are ints)
 
 # queries
 these return data along with true/false on success/failure
