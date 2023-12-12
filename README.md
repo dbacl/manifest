@@ -1,6 +1,6 @@
 # notes
 * admin group has value 0
-* `other` user/group has value 1 (all users are implicitly included in this group)
+* `other` group has value 1 (all users are implicitly included in this group)
 * `other` can be used for anonymous users (not logged-in)
 * upg = user private group
 
