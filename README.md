@@ -22,11 +22,9 @@ these return data along with true/false on success/failure
 * addUser: user is assigned a user private group
 * addGroup: returns new gid
 
-these 2 functions take an id. assert id != 1 for these functions
-1. addToGroup: add to `groups` table
-2. removeFromGroup: assert not upg, remove from `groups` table
+* addToGroup: add to `groups` table
+* removeFromGroup: assert not upg, remove from `groups` table
 
-assert id != 0 or 1 for these
 * deleteUser: delete all rows from `groups`, delete all (partially) owned
 * deleteGroup: delete from `groups`
 
